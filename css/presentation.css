@@ -1,0 +1,317 @@
+/*
+  A common approach is to use googleapis.com to generate css for the webfonts you want to use.
+  The downside of this approach is that you have to be online. So below I have simply saved
+  the output of the googleapis url into a file. Then you of course also have to make sure
+  the webfonts are locally installed to make offline usage work. For Ubuntu (or Debian) I
+  successfully used the script from here to do that:
+  http://www.webupd8.org/2011/01/automatically-install-all-google-web.html
+*/
+
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Cutive+Mono); */
+@import url(fonts.css);
+
+
+
+/*
+    We display a fallback message for users with browsers that don't support
+    all the features required by it. All of the content will be still fully
+    accessible for them, but some more advanced effects would be missing.
+    When impress.js detects that browser supports all necessary CSS3 features,
+    the fallback-message style is hidden.
+*/
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+
+/*
+  The body background is the bacgkround of "everything". Many
+  impress.js tools call it the "surface". It could also be a
+  picture or pattern, but we leave it as light gray.
+*/
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+}
+
+/*
+    Now let's style the presentation steps.
+*/
+
+.step {
+    position: relative;
+    display: block;
+
+    width: 900px;
+    height: 700px;
+    margin: 20px auto;
+    padding: 40px 60px;
+
+    text-shadow: 0 2px 2px rgba(0, 10, 0, .5);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: -1px;
+
+}
+
+#ErtosLine {
+  left: -345px;
+  top: 255px;
+  z-index: 105;
+  transition: 6s;
+  zoom: 1.5;
+}
+.impress-on-pyramidErtosAge #ErtosLine,
+.impress-on-intro #ErtosLine {
+  left: -290px;
+  top: 330px;
+}
+#Pyramid {
+  left: 100px;
+  top: 550px;
+  transition: 6s;
+}
+.impress-on-pyramidGrow #Pyramid,
+.impress-on-slideNowBP0 #Pyramid {
+  left: 100px;
+  top: -500px;
+}
+#tho {
+  width: 3000px;
+  height: 3000px;
+  z-index: 101;
+  background-color: #ffffff;
+  transition: 1s;
+  opacity: 0;
+  left: -1000px;
+  top: 650px;
+}
+
+.ItGrowSlide, .ErtosAge, .bothAge { transition: 2s; opacity: 0 }
+.impress-on-pyramidErtosAge .ErtosAge { opacity: 1; }
+.impress-on-pyramidGrow .bothAge, .impress-on-pyramidErtosAge .bothAge { opacity: 1; }
+.impress-on-pyramidGrow .ItGrowSlide{ opacity: 1; }
+
+.impress-on-pyramidGrow #BossClosedEyes{
+  left: -150px;
+  top: 200px;
+}
+#BossClosedEyes{
+ left: -400px;
+ top: 200px;
+}
+#ErtosManHappy, #ErtosManSad {
+  top: 105px;
+  left: 22px;
+  transform: scale(0.8);
+}
+#ErtosComponents {
+  left: 600px;
+  top: 400px;
+}
+.impress-on-pyramidGrow #ErtosManHappy,
+.impress-on-pyramidGrow #ErtosManSad {
+  top: 125px;
+  left: -30px;
+  transform: scale(0.3);
+}
+
+.impress-on-pyramidGrow #ArrowUp{
+  left: 80px;
+  top: 140px;
+  transform: rotate(-55deg);
+}
+#ArrowUp{
+  transform: rotate(0deg);
+  left: 700px;
+  top: 400px;
+  transition: 5s;
+}
+
+.impress-on-pyramidGrow #ArrowDown{
+  left: -180px;
+  top: 550px;
+  transform: rotate(-55deg);
+}
+#ArrowDown{
+  transform: rotate(0deg);
+  left: 600px;
+  top: 450px;
+  transition: 4s;
+}
+#jokeImg {
+  transition: 5s;
+  left: 170px;
+  top: 800px;
+  z-index: 110;
+  zoom:0.8;
+}
+.impress-on-pyramidGrow #jokeImg {
+  left: 300px;
+  top: 600px;
+}
+
+.nowBP {
+  transition: left 1.5s, top 1.5s, transform 2.5s;
+  opacity: 0;
+}
+.step.active .nowBP {
+  opacity: 1;
+}
+
+.impress-on-slideNowBP0 #NowBP0,
+.impress-on-slideNowBP0 #NowBP1 {
+  top: 500px;
+  left: 400px;
+  transform: scale(2);
+}
+.impress-on-slideNowBP1-0 #NowBP0,
+.impress-on-slideNowBP1-0 #NowBP1 {
+  top: -300px;
+  left: -500px;
+  transform: scale(0.8);
+}
+.impress-on-slideNowBP1-1 #NowBP1 {
+  top: 230px;
+  left: -900px;
+  transform: scale(2);
+  opacity: 1;
+}
+.impress-on-slideNowBP1-2 #NowBP1 {
+  top: 100px;
+  left: 0px;
+  transform: scale(1.5);
+  opacity: 1;
+}
+.impress-on-slideNowBP1-3 #NowBP1,
+.impress-on-slideNowBP1-3 #NowBP2 {
+  top: -450px;
+  left: -500px;
+  transform: scale(1.3);
+}
+.impress-on-slideNowBP1-3 #NowBP1 { opacity: 1; }
+
+.impress-on-slideNowBP2 #NowBP1,
+.impress-on-slideNowBP2 #NowBP2 {
+  top: -300px;
+  left: -500px;
+  transform: scale(0.8);
+}
+
+.NowBPTazis {
+  left: -100px;
+}
+
+.caption {
+  color: #ff4466;
+  transition: 1s;
+  opacity: 0;
+}
+
+.impress-enabled .step.active .caption {
+  opacity: 1;
+}
+
+#structure{
+  left: -250px;
+  top: -100px;
+  transform: scale(1);
+}
+
+#FutureBP {
+  left: -70px;
+  top: -100px;
+  transform: scale(0.8);
+}
+
+#NowBPTazis {
+  left: -100px;
+}
+
+#russiaMap {
+  opacity: 0;
+  zoom: 1;
+  transition: 2s;
+  left: -30px;
+  top: 20px;
+  z-index: -5;
+}
+.impress-on-futureBussinesProccess_zoomout #russiaMap {
+  opacity: 1;
+}
+
+.impress-on-futureBussinesProccess_zoomout #FutureBP {
+  opacity: 0;
+}
+
+#Future_it {
+  left: -450px;
+  top: -10px;
+}
+
+#Nodes_now_bad_img, #Nodes_now_shutdown_img {
+  transition: 1s;
+  opacity: 0;
+  zoom: 0.7;
+  left: -1400px;
+  top: -40px;
+}
+.NodesMap {
+  z-index: -4 !important;
+  left: -10px;
+  top: -240px;
+  zoom: 0.9
+}
+#Node_inside_img {
+  z-index: -4 !important;
+  left: -700px;
+  top: 10px;
+  zoom: 0.9;
+}
+
+.impress-on-Nodes_now_bad #Nodes_now_bad_img{
+  opacity: 1;
+}
+.impress-on-Nodes_now_shutdown #Nodes_now_shutdown_img{
+  opacity: 1;
+}
+
+#employeeContent {
+  position: absolute;
+  left: -200px;
+  top: -30px;
+}
+#employeeContent > img {
+  transition: 5s;
+  transform: scale(0.5);
+}
+.step.active #employeeContent > img {
+  transform: scale(1);
+}
+
+.step > .ansScheme {
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "PresentBadStructure",
+  "version": "1.0.1",
+  "description": "It's a presentation of GKOVD branch North Sibiria",
+  "keywords": [
+    "presentation",
+    "gkovd",
+    "slideshow",
+    "browser"
+  ],
+  "author": [
+    "Druzhinin Aleksey",
+    "Kovkov Mikhail"
+  ],
+  "dependencies": {
+    "impress.js": "^1.1.0"
+  },
+  "license": "GPL-3.0-or-later",
+}
