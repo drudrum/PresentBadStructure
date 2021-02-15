@@ -1,18 +1,4 @@
 /*
-  A common approach is to use googleapis.com to generate css for the webfonts you want to use.
-  The downside of this approach is that you have to be online. So below I have simply saved
-  the output of the googleapis url into a file. Then you of course also have to make sure
-  the webfonts are locally installed to make offline usage work. For Ubuntu (or Debian) I
-  successfully used the script from here to do that:
-  http://www.webupd8.org/2011/01/automatically-install-all-google-web.html
-*/
-
-/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Cutive+Mono); */
-@import url(fonts.css);
-
-
-
-/*
     We display a fallback message for users with browsers that don't support
     all the features required by it. All of the content will be still fully
     accessible for them, but some more advanced effects would be missing.
