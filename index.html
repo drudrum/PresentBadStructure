@@ -117,8 +117,9 @@
     var rootElement = document.getElementById( "impress" );
     rootElement.addEventListener( "impress:stepenter", function(event) {
       var currentStep = event.target;
-      console.log( "Entered the Step Element '" + currentStep.id + "'", currentStep);
-      document.getElementById( "stepIndicator" ).innerHTML = currentStep.id;
+      var i = Array.prototype.indexOf.call(currentStep.parentNode.children, currentStep);
+      // console.log( "Entered the Step Element '" + currentStep.id + "'", currentStep);
+      document.getElementById( "stepIndicator" ).innerHTML = i + ' ' + currentStep.id;
     });
   </script>
 

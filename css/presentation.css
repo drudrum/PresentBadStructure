@@ -61,16 +61,16 @@ body {
 }
 
 #ErtosLine {
-  left: -345px;
-  top: 255px;
+  left: 430px;
+  top: 680px;
   z-index: 105;
   transition: 6s;
-  zoom: 1.5;
+  transform: scale(1.5);
 }
 .impress-on-pyramidErtosAge #ErtosLine,
 .impress-on-intro #ErtosLine {
-  left: -290px;
-  top: 330px;
+  left: 430px;
+  top: 800px;
 }
 #Pyramid {
   left: 100px;
@@ -148,13 +148,13 @@ body {
 #jokeImg {
   transition: 5s;
   left: 170px;
-  top: 800px;
+  top: 640px;
   z-index: 110;
-  zoom:0.8;
+  transform: scale(0.8);
 }
 .impress-on-pyramidGrow #jokeImg {
   left: 300px;
-  top: 600px;
+  top: 440px;
 }
 
 .nowBP {
@@ -242,7 +242,7 @@ body {
 
 #russiaMap {
   opacity: 0;
-  zoom: 1;
+  transform: scale(1);
   transition: 2s;
   left: -30px;
   top: 20px;
@@ -264,21 +264,21 @@ body {
 #Nodes_now_bad_img, #Nodes_now_shutdown_img {
   transition: 1s;
   opacity: 0;
-  zoom: 0.7;
+  transform: scale(0.7);
   left: -1400px;
-  top: -40px;
+  top: -210px;
 }
 .NodesMap {
   z-index: -4 !important;
   left: -10px;
-  top: -240px;
-  zoom: 0.9
+  top: -250px;
+  transform: scale(0.9);
 }
 #Node_inside_img {
   z-index: -4 !important;
   left: -700px;
   top: 10px;
-  zoom: 0.9;
+  transform: scale(0.9);
 }
 
 .impress-on-Nodes_now_bad #Nodes_now_bad_img{
