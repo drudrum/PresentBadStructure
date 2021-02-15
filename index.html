@@ -109,10 +109,17 @@
       <img id="russiaMap" src="svg/Expansion.svg" class="ansScheme caption">
     </div>
   </div>
+  <div id="stepIndicator">StepIndicator</div>
 
   <script src="https://cdn.rawgit.com/impress/impress.js/master/js/impress.js"></script>
   <script>
     impress().init();
+    var rootElement = document.getElementById( "impress" );
+    rootElement.addEventListener( "impress:stepenter", function(event) {
+      var currentStep = event.target;
+      console.log( "Entered the Step Element '" + currentStep.id + "'", currentStep);
+      document.getElementById( "stepIndicator" ).innerHTML = currentStep.id;
+    });
   </script>
 
 </body>

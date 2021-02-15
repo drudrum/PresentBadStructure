@@ -307,3 +307,10 @@ body {
   position: absolute;
   z-index: 100;
 }
+
+#stepIndicator {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  opacity: 0.5;
+}
