@@ -236,6 +236,21 @@ body {
   opacity: 1
 }
 
+.impress-on-futureBussinesProccess_zoom #imgITIL {
+  transform: scale(0.1);
+  left: -900px;
+  top: 1000px;
+  transition: 3s;
+}
+.impress-on-futureBussinesProccess_overview #imgITIL {
+  transform: scale(0.5);
+  left: -400px;
+}
+.impress-on-futureBussinesProccess_overview #imgITIL:hover {
+  transform: scale(1);
+  left: -500px;
+}
+
 #NowBPTazis {
   left: -100px;
 }
